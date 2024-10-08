@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wealth Dividends Ltd - Payout structure</title>
+    <!-- Include Mermaid.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        svg {
+            display: inline-block;
+        }
+        pre {
+            background-color: #fff;
+            padding: 10px;
+            overflow: auto;
+        }
+        .mermaid {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="logo">
+    <style>
+                div#logo {
+            width: 246px;
+            height: 146px;
+            margin: 0px;
+            color: black;
+        }
+        
+        div#logo h1 {
+            color: black;
+            margin: -37px;
+            margin-left: 240px;
+            font-size: 28px;
+            font-family: monospace;
+            font-stretch: extra-condensed;
+            text-decoration: double;
+        }
+    </style>
+    <h1>Wealth Dividends</h1>
+    <svg width="400" height="100" xmlns="http://www.w3.org/2000/svg">
+      <!-- Straight Thick Line -->
+      <line x1="103" y1="10" x2="220" y2="10" stroke="black" stroke-width="81"></line>
+    
+      <!-- 5 Half Circles (dots) -->
+      <circle cx="250" cy="50" r="10" stroke="black" stroke-width="2" fill="none"></circle>
+      <path d="M 240 50 A 10 10 0 0 1 260 50" fill="black"></path>
+    
+      <circle cx="280" cy="50" r="10" stroke="black" stroke-width="2" fill="none"></circle>
+      <path d="M 270 50 A 10 10 0 0 1 290 50" fill="black"></path>
+    
+      <circle cx="310" cy="50" r="10" stroke="black" stroke-width="2" fill="none"></circle>
+      <path d="M 300 50 A 10 10 0 0 1 320 50" fill="black"></path>
+    
+      <circle cx="340" cy="50" r="10" stroke="black" stroke-width="2" fill="none"></circle>
+      <path d="M 330 50 A 10 10 0 0 1 350 50" fill="black"></path>
+    
+      <circle cx="370" cy="50" r="10" stroke="black" stroke-width="2" fill="none"></circle>
+      <path d="M 360 50 A 10 10 0 0 1 380 50" fill="black"></path>
+    </svg>
+</div>
+    
+<h2>1. Software Design Diagram</h2>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Scan Global Markets for High-Yield Dividend Stocks]
+    B --> C[Identify Dividend Events 50-100 per Year]
+    C --> D[Filter Stocks Based on Criteria]
+    D --> E[Schedule Purchase Before Ex-Dividend Date]
+    E --> F[Execute Buy Order]
+    F --> G[Hold Until Dividend Payment]
+    G --> H[Receive Dividend]
+    H --> I[Execute Sell Order After Dividend Payment]
+    I --> J[Collect Capital for Next Cycle]
+    H --> K[Aggregate Dividends]
+    K --> L[Group Dividends Monthly]
+    L --> M[Distribute Monthly Payouts to Shareholders]
+    M --> N[End]
+</div>
+
+<h2>2. Financial Transformation Diagram</h2>
+<div class="mermaid">
+sequenceDiagram
+    participant Investor as Shareholders's Capital
+    participant Software as Dividend Capture Software
+    participant Market as Stock Market
+    participant Company as Wealth Dividends Ltd
+    participant Shareholder as Shareholders
+
+    Investor->>Software: Provide Lump Sum Capital
+    Software->>Market: Identify High-Yield Dividend Stocks
+    Software->>Market: Buy Stocks Before Ex-Dividend Date
+    Market-->>Software: Stocks Purchased
+    Software->>Company: Hold Stocks Until Dividend Payment
+    Market-->>Company: Dividend Payments
+    Software->>Market: Sell Stocks After Dividend Payment
+    Market-->>Software: Capital Returned
+    Company->>Company: Aggregate Dividends Monthly
+    Company->>Shareholder: Distribute Monthly Payouts
+    Note over Investor,Shareholder: Process Repeats 50-100 Times a Year
+</div>
+
+<h2>3. Calendar Events Diagram</h2>
+<div class="mermaid">
+gantt
+    title Dividend Capture and Payout Schedule
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b
+
+    section Dividend Events
+    Dividend_Event_1       :done,    des1, 2024-01-05,2024-01-15
+    Dividend_Event_2       :done,    des2, 2024-01-20,2024-01-30
+    Dividend_Event_3       :done,    des3, 2024-02-10,2024-02-20
+    Dividend_Event_4       :done,    des4, 2024-02-25,2024-03-05
+    Dividend_Event_5       :done,    des5, 2024-03-10,2024-03-20
+    Dividend_Event_6       :done,    des6, 2024-03-25,2024-04-05
+    Dividend_Event_...     :active,  des7, 2024-04-10,2024-12-20
+
+    section Monthly Payouts
+    January_Payout         :milestone, 2024-01-31,1d
+    February_Payout        :milestone, 2024-02-28,1d
+    March_Payout           :milestone, 2024-03-31,1d
+    April_Payout           :milestone, 2024-04-30,1d
+    May_Payout             :milestone, 2024-05-31,1d
+    June_Payout            :milestone, 2024-06-30,1d
+    July_Payout            :milestone, 2024-07-31,1d
+    August_Payout          :milestone, 2024-08-31,1d
+    September_Payout       :milestone, 2024-09-30,1d
+    October_Payout         :milestone, 2024-10-31,1d
+    November_Payout        :milestone, 2024-11-30,1d
+    December_Payout        :milestone, 2024-12-31,1d
+</div>
+
+<h2>4. High-Level Architecture Diagram</h2>
+<div class="mermaid">
+graph LR
+    A[Market Data Feeds] --> B[Dividend Capture Software]
+    B --> C[Trading Platform API]
+    C --> D[Brokerage Account]
+    D --> E[Stock Market]
+    E --> D
+    D --> F[Dividend Payments]
+    F --> G[Company Accounts]
+    G --> H[Aggregation Module]
+    H --> I[Monthly Payouts to Shareholders]
+</div>
+
+<h2>5. Process Flow Diagram</h2>
+<div class="mermaid">
+flowchart TD
+    Start --> MarketData[Collect Market Data]
+    MarketData --> Identify[Identify High-Yield Dividend Stocks]
+    Identify --> Schedule[Schedule Trades Based on Ex-Dividend Dates]
+    Schedule --> Buy[Execute Buy Orders]
+    Buy --> Hold[Hold Stocks Until Dividend Date]
+    Hold --> ReceiveDividends[Receive Dividends]
+    ReceiveDividends --> Sell[Execute Sell Orders]
+    Sell --> CapitalReturn[Return Capital to Investment Pool]
+    ReceiveDividends --> Aggregate[Aggregate Dividends]
+    Aggregate --> MonthlyPayouts[Distribute Monthly Payouts]
+    MonthlyPayouts --> End
+</div>
+
+<h2>6. Data Flow Diagram (DFD)</h2>
+<div class="mermaid">
+flowchart LR
+    MarketData[Market Data] -->|Dividend Info| Software
+    Software -->|Trade Orders| Broker
+    Broker -->|Trade Confirmations| Software
+    Broker -->|Dividends| CompanyAccount
+    CompanyAccount -->|Dividend Data| Software
+    Software -->|Aggregation| PayoutModule
+    PayoutModule -->|Monthly Payout Info| ShareholderAccount
+</div>
+
+</body>
+</html>
