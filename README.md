@@ -130,11 +130,9 @@ gantt
 
 This diagram shows the components involved in the software and how they interact.
 
-mermaid
 
-Copy code
-
-`graph LR
+```mermaid
+graph LR
     A[Market Data Feeds] --> B[Dividend Capture Software]
     B --> C[Trading Platform API]
     C --> D[Brokerage Account]
@@ -143,7 +141,8 @@ Copy code
     D --> F[Dividend Payments]
     F --> G[Company Accounts]
     G --> H[Aggregation Module]
-    H --> I[Monthly Payouts to Shareholders]`
+    H --> I[Monthly Payouts to Shareholders]
+```
 
 **Explanation:**
 
