@@ -46,11 +46,8 @@ flowchart TD
 
 This sequence diagram shows how the initial capital is transformed into regular monthly payouts through the dividend capture process.
 
-mermaid
-
-Copy code
-
-`sequenceDiagram
+```mermaid
+sequenceDiagram
     participant Investor as Investor's Capital
     participant Software as Dividend Capture Software
     participant Market as Stock Market
@@ -67,7 +64,8 @@ Copy code
     Market-->>Software: Capital Returned
     Company->>Company: Aggregate Dividends Monthly
     Company->>Shareholder: Distribute Monthly Payouts
-    Note over Investor,Shareholder: Process Repeats 50-100 Times a Year`
+    Note over Investor,Shareholder: Process Repeats 50-100 Times a Year
+```
 
 **Explanation:**
 
