@@ -163,11 +163,9 @@ graph LR
 
 A detailed flowchart showing the end-to-end process of dividend capture and payout distribution.
 
-mermaid
 
-Copy code
-
-`flowchart TD
+```mermaid
+flowchart TD
     Start --> MarketData[Collect Market Data]
     MarketData --> Identify[Identify High-Yield Dividend Stocks]
     Identify --> Schedule[Schedule Trades Based on Ex-Dividend Dates]
@@ -178,7 +176,8 @@ Copy code
     Sell --> CapitalReturn[Return Capital to Investment Pool]
     ReceiveDividends --> Aggregate[Aggregate Dividends]
     Aggregate --> MonthlyPayouts[Distribute Monthly Payouts]
-    MonthlyPayouts --> End`
+    MonthlyPayouts --> End
+```
 
 **Explanation:**
 
