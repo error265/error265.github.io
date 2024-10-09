@@ -87,11 +87,9 @@ sequenceDiagram
 
 This Gantt chart displays the scheduling of dividend events and monthly payouts over a year.
 
-mermaid
 
-Copy code
-
-`gantt
+```mermaid
+gantt
     title Dividend Capture and Payout Schedule
     dateFormat  YYYY-MM-DD
     axisFormat  %b
@@ -117,7 +115,8 @@ Copy code
     September Payout       :milestone, 2024-09-30,1d
     October Payout         :milestone, 2024-10-31,1d
     November Payout        :milestone, 2024-11-30,1d
-    December Payout        :milestone, 2024-12-31,1d`
+    December Payout        :milestone, 2024-12-31,1d
+```
 
 **Explanation:**
 
