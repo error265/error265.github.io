@@ -6,11 +6,8 @@ Diagrams for Wealth Dividends Ltd
 
 This flowchart illustrates the software's operation, from scanning for dividend opportunities to distributing monthly payouts.
 
-mermaid
-
-Copy code
-
-`flowchart TD
+```mermaid
+flowchart TD
     A[Start] --> B[Scan Global Markets for High-Yield Dividend Stocks]
     B --> C[Identify Dividend Events (50-100 per Year)]
     C --> D[Filter Stocks Based on Criteria]
@@ -23,7 +20,8 @@ Copy code
     H --> K[Aggregate Dividends]
     K --> L[Group Dividends Monthly]
     L --> M[Distribute Monthly Payouts to Shareholders]
-    M --> N[End]`
+    M --> N[End]
+```
 
 **Explanation:**
 
