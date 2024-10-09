@@ -13,29 +13,28 @@
             background-color: #f4f4f4;
             color: #333;
         }
+
         header {
-            background-color: #4CAF50;
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 20px 0;
         }
+
         section {
             padding: 20px;
             max-width: 800px;
             margin: auto;
         }
+
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
         }
-                body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
 
+        /* Button styles */
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -53,15 +52,76 @@
             background-color: #45a049;
         }
 
+        /* Container for centering content */
         .container {
             text-align: center;
             margin-top: 50px;
+        }
+
+        /* Center logo */
+        #logo {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        svg {
+            display: inline-block;
         }
     </style>
 </head>
 <body>
 
 <header>
+    <a href="http://wealthdividends.com" id="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150">
+          <!-- Company Name -->
+          <text xmlns="http://www.w3.org/2000/svg" x="240" y="70" font-family="monospace" font-size="18" fill="black">Wealth Dividends</text>
+
+          <!-- Straight Thick Line -->
+          <line x1="103" y1="85" x2="220" y2="85" stroke="black" stroke-width="81"/>
+
+          <!-- Animated Circles (dots) -->
+          <circle cx="250" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+            <animate attributeName="cx" from="150" to="250" dur="2s" begin="0s" fill="freeze"/>
+            <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
+          </circle>
+          <path d="M 240 90 A 10 10 0 0 1 260 90" fill="black">
+            <animate attributeName="cx" from="150" to="250" dur="2s" begin="0s" fill="freeze"/>
+          </path>
+
+          <circle cx="280" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+            <animate attributeName="cx" from="150" to="280" dur="2.5s" begin="0.5s" fill="freeze"/>
+            <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
+          </circle>
+          <path d="M 270 90 A 10 10 0 0 1 290 90" fill="black">
+            <animate attributeName="cx" from="150" to="280" dur="2.5s" begin="0.5s" fill="freeze"/>
+          </path>
+
+          <circle cx="310" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+            <animate attributeName="cx" from="150" to="310" dur="3s" begin="1s" fill="freeze"/>
+            <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
+          </circle>
+          <path d="M 300 90 A 10 10 0 0 1 320 90" fill="black">
+            <animate attributeName="cx" from="150" to="310" dur="3s" begin="1s" fill="freeze"/>
+          </path>
+
+          <circle cx="340" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+            <animate attributeName="cx" from="150" to="340" dur="3.5s" begin="1.5s" fill="freeze"/>
+            <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
+          </circle>
+          <path d="M 330 90 A 10 10 0 0 1 350 90" fill="black">
+            <animate attributeName="cx" from="150" to="340" dur="3.5s" begin="1.5s" fill="freeze"/>
+          </path>
+
+          <circle cx="370" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+            <animate attributeName="cx" from="150" to="370" dur="4s" begin="2s" fill="freeze"/>
+            <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
+          </circle>
+          <path d="M 360 90 A 10 10 0 0 1 380 90" fill="black">
+            <animate attributeName="cx" from="150" to="370" dur="4s" begin="2s" fill="freeze"/>
+          </path>
+        </svg>
+    </a>
     <h1>Wealth Dividends Ltd</h1>
     <p>Your Trusted Partner in Wealth Generation through Automated Dividend Strategies</p>
 </header>
@@ -79,7 +139,6 @@
         <li>Typical returns: 6-8% annually from dividend income.</li>
         <li>Potential additional income from property investments, with yields of 5-6% annually.</li>
     </ul>
-
 
     <div class="container">
         <a href="payouts.html" class="button">How it Works</a>
