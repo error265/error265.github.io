@@ -6,7 +6,7 @@ Diagrams for Wealth Dividends Ltd
 
 This flowchart illustrates the software's operation, from scanning for dividend opportunities to distributing monthly payouts.
 
-```mermaid
+```
 flowchart TD
     A[Start] --> B[Scan Global Markets for High-Yield Dividend Stocks]
     B --> C[Identify Dividend Events (50-100 per Year)]
