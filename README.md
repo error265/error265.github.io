@@ -201,18 +201,16 @@ flowchart TD
 
 Shows how data moves through the system.
 
-mermaid
-
-Copy code
-
-`flowchart LR
+```mermaid
+flowchart LR
     MarketData[Market Data] -->|Dividend Info| Software
     Software -->|Trade Orders| Broker
     Broker -->|Trade Confirmations| Software
     Broker -->|Dividends| CompanyAccount
     CompanyAccount -->|Dividend Data| Software
     Software -->|Aggregation| PayoutModule
-    PayoutModule -->|Monthly Payout Info| ShareholderAccount`
+    PayoutModule -->|Monthly Payout Info| ShareholderAccount
+```
 
 **Explanation:**
 
