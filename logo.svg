@@ -1,0 +1,48 @@
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Company Name -->
+  <text xmlns="http://www.w3.org/2000/svg" x="240" y="70" font-family="monospace" font-size="18" fill="black">Wealth Dividends</text>
+
+  <!-- Straight Thick Line -->
+  <line x1="103" y1="85" x2="220" y2="85" stroke="black" stroke-width="81" />
+
+  <!-- Animated Circles (dots) -->
+  <circle cx="250" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+    <animate attributeName="cx" from="150" to="250" dur="2s" begin="0s" fill="freeze" />
+    <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite" />
+  </circle>
+  <path d="M 240 90 A 10 10 0 0 1 260 90" fill="black">
+    <animate attributeName="cx" from="150" to="250" dur="2s" begin="0s" fill="freeze" />
+  </path>
+
+  <circle cx="280" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+    <animate attributeName="cx" from="150" to="280" dur="2.5s" begin="0.5s" fill="freeze" />
+    <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite" />
+  </circle>
+  <path d="M 270 90 A 10 10 0 0 1 290 90" fill="black">
+    <animate attributeName="cx" from="150" to="280" dur="2.5s" begin="0.5s" fill="freeze" />
+  </path>
+
+  <circle cx="310" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+    <animate attributeName="cx" from="150" to="310" dur="3s" begin="1s" fill="freeze" />
+    <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite" />
+  </circle>
+  <path d="M 300 90 A 10 10 0 0 1 320 90" fill="black">
+    <animate attributeName="cx" from="150" to="310" dur="3s" begin="1s" fill="freeze" />
+  </path>
+
+  <circle cx="340" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+    <animate attributeName="cx" from="150" to="340" dur="3.5s" begin="1.5s" fill="freeze" />
+    <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite" />
+  </circle>
+  <path d="M 330 90 A 10 10 0 0 1 350 90" fill="black">
+    <animate attributeName="cx" from="150" to="340" dur="3.5s" begin="1.5s" fill="freeze" />
+  </path>
+
+  <circle cx="370" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+    <animate attributeName="cx" from="150" to="370" dur="4s" begin="2s" fill="freeze" />
+    <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite" />
+  </circle>
+  <path d="M 360 90 A 10 10 0 0 1 380 90" fill="black">
+    <animate attributeName="cx" from="150" to="370" dur="4s" begin="2s" fill="freeze" />
+  </path>
+</svg>
