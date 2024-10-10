@@ -28,6 +28,8 @@
             margin: auto;
             overflow-y: scroll;
             height: 710px;
+            background-color: #ffffff;
+            color: #000;
         }
 
         footer {
@@ -81,11 +83,27 @@
             cursor: pointer;
             border: 1px solid #444;
             color: #e0e0e0;
+            position: relative;
+        }
+
+        .hover-box::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s;
+            opacity: 0;
+        }
+
+        .hover-box:hover::after {
+            opacity: 1;
         }
 
         .hover-box:hover {
-            background-color: #444;
-            color: #f4f4f4;
+            color: #ffffff;
         }
 
         .hover-content {
@@ -93,6 +111,8 @@
             color: #f4f4f4;
             padding: 10px;
             font-size: 14px;
+            position: relative;
+            z-index: 1;
         }
 
         .hover-box:hover .hover-content {
