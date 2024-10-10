@@ -10,13 +10,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #1a1a1a;
+            color: #f4f4f4;
         }
 
         header {
-            background-color: white;
-            color: white;
+            background-color: #1a1a1a;
+            color: #f4f4f4;
             padding: 0px 0;
             height: 129px;
             margin-top: -28px;
@@ -32,7 +32,7 @@
 
         footer {
             background-color: #333;
-            color: white;
+            color: #f4f4f4;
             text-align: center;
             padding: 10px;
             position: fixed;
@@ -44,7 +44,7 @@
         }
 
         footer a {
-            color: white;
+            color: #f4f4f4;
         }
 
         /* Button styles */
@@ -53,7 +53,7 @@
             padding: 10px 20px;
             font-size: 16px;
             font-weight: bold;
-            color: white;
+            color: #f4f4f4;
             background-color: #4CAF50;
             text-align: center;
             border-radius: 5px;
@@ -70,26 +70,29 @@
             width: 100%;
             max-width: 350px;
             height: 200px;
-            background-color: #ddd;
+            background-color: #222;
             margin: 20px auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
+            font-size: 16px;
             text-align: center;
             transition: background-color 0.3s, color 0.3s;
             cursor: pointer;
+            border: 1px solid #444;
+            color: #e0e0e0;
         }
 
         .hover-box:hover {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #444;
+            color: #f4f4f4;
         }
 
         .hover-content {
             display: none;
-            color: white;
+            color: #f4f4f4;
             padding: 10px;
+            font-size: 14px;
         }
 
         .hover-box:hover .hover-content {
@@ -117,49 +120,49 @@
     <a href="http://wealthdividends.com" id="logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150">
           <!-- Company Name -->
-          <text xmlns="http://www.w3.org/2000/svg" x="240" y="70" font-family="monospace" font-size="18" fill="black">Wealth Dividends</text>
+          <text xmlns="http://www.w3.org/2000/svg" x="240" y="70" font-family="monospace" font-size="18" fill="white">Wealth Dividends</text>
 
           <!-- Straight Thick Line -->
-          <line x1="103" y1="85" x2="220" y2="85" stroke="black" stroke-width="81"/>
+          <line x1="103" y1="85" x2="220" y2="85" stroke="white" stroke-width="81"/>
 
           <!-- Animated Circles (dots) -->
-          <circle cx="250" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+          <circle cx="250" cy="90" r="10" stroke="white" stroke-width="2" fill="none">
             <animate attributeName="cx" from="150" to="250" dur="2s" begin="0s" fill="freeze"/>
             <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
           </circle>
-          <path d="M 240 90 A 10 10 0 0 1 260 90" fill="black">
+          <path d="M 240 90 A 10 10 0 0 1 260 90" fill="white">
             <animate attributeName="cx" from="150" to="250" dur="2s" begin="0s" fill="freeze"/>
           </path>
 
-          <circle cx="280" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+          <circle cx="280" cy="90" r="10" stroke="white" stroke-width="2" fill="none">
             <animate attributeName="cx" from="150" to="280" dur="2.5s" begin="0.5s" fill="freeze"/>
             <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
           </circle>
-          <path d="M 270 90 A 10 10 0 0 1 290 90" fill="black">
+          <path d="M 270 90 A 10 10 0 0 1 290 90" fill="white">
             <animate attributeName="cx" from="150" to="280" dur="2.5s" begin="0.5s" fill="freeze"/>
           </path>
 
-          <circle cx="310" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+          <circle cx="310" cy="90" r="10" stroke="white" stroke-width="2" fill="none">
             <animate attributeName="cx" from="150" to="310" dur="3s" begin="1s" fill="freeze"/>
             <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
           </circle>
-          <path d="M 300 90 A 10 10 0 0 1 320 90" fill="black">
+          <path d="M 300 90 A 10 10 0 0 1 320 90" fill="white">
             <animate attributeName="cx" from="150" to="310" dur="3s" begin="1s" fill="freeze"/>
           </path>
 
-          <circle cx="340" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+          <circle cx="340" cy="90" r="10" stroke="white" stroke-width="2" fill="none">
             <animate attributeName="cx" from="150" to="340" dur="3.5s" begin="1.5s" fill="freeze"/>
             <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
           </circle>
-          <path d="M 330 90 A 10 10 0 0 1 350 90" fill="black">
+          <path d="M 330 90 A 10 10 0 0 1 350 90" fill="white">
             <animate attributeName="cx" from="150" to="340" dur="3.5s" begin="1.5s" fill="freeze"/>
           </path>
 
-          <circle cx="370" cy="90" r="10" stroke="black" stroke-width="2" fill="none">
+          <circle cx="370" cy="90" r="10" stroke="white" stroke-width="2" fill="none">
             <animate attributeName="cx" from="150" to="370" dur="4s" begin="2s" fill="freeze"/>
             <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
           </circle>
-          <path d="M 360 90 A 10 10 0 0 1 380 90" fill="black">
+          <path d="M 360 90 A 10 10 0 0 1 380 90" fill="white">
             <animate attributeName="cx" from="150" to="370" dur="4s" begin="2s" fill="freeze"/>
           </path>
         </svg>
